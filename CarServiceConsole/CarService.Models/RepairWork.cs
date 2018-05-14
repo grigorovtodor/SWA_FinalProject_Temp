@@ -22,6 +22,5 @@
 
         public virtual Car Car { get; set; }
 
-        //test
     }
 }

@@ -10,6 +10,10 @@
 
     public class CarServiceDbContext : DbContext
     {
+        public CarServiceDbContext() : base("CarServiceDb")
+        {
+
+        }
         public virtual IDbSet<User> Users { get; set; }
 
         public virtual IDbSet<Car> Cars { get; set; }

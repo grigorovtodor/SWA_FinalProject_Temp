@@ -10,6 +10,7 @@
     public class Car
     {
         private ICollection<RepairWork> repairWorks;
+        private Model model;
 
         public Car()
         {
@@ -27,7 +28,7 @@
 
         public Brand Brand { get; set; }
 
-        public Model Model { get; set; }
+        public Model Model { get; set; } //this.model = new List<Model>().Select(m => m.BrandId = Brand.Id).ToList();
 
         public int UserId { get; set; }
 

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Models", "CarService.Models\CarService.Models.csproj", "{326B30A0-00D1-4B88-84BB-D8B392DAC325}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Data", "CarService.Data\CarService.Data.csproj", "{97D3E4AC-FC7E-4BFA-8877-0BCE04F376B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.ConsoleClient", "CarService.ConsoleClient\CarService.ConsoleClient.csproj", "{6FC6CE4A-7392-45AF-8E7B-A500C039B8CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{326B30A0-00D1-4B88-84BB-D8B392DAC325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326B30A0-00D1-4B88-84BB-D8B392DAC325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326B30A0-00D1-4B88-84BB-D8B392DAC325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D3E4AC-FC7E-4BFA-8877-0BCE04F376B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D3E4AC-FC7E-4BFA-8877-0BCE04F376B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D3E4AC-FC7E-4BFA-8877-0BCE04F376B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D3E4AC-FC7E-4BFA-8877-0BCE04F376B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC6CE4A-7392-45AF-8E7B-A500C039B8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC6CE4A-7392-45AF-8E7B-A500C039B8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC6CE4A-7392-45AF-8E7B-A500C039B8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC6CE4A-7392-45AF-8E7B-A500C039B8CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

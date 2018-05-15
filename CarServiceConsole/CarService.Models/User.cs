@@ -31,6 +31,7 @@
 
         public Gender Gender { get; set; }
 
+        [StringLength(10)]
         public string PhoneNumber { get; set; }
 
         public string Email { get; set; }

@@ -20,8 +20,11 @@
         [Key]
         public int Id { get; set; }
 
+        [MaxLength(17)]
+        [MinLength(17)]
         public string VIN { get; set; }
 
+        [MaxLength(8)]
         public string RegistrationPlateNumber { get; set; }
 
         public Color Color { get; set; }

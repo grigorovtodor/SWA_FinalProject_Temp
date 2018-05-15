@@ -10,7 +10,7 @@
     public class Car
     {
         private ICollection<RepairWork> repairWorks;
-        private Model model;
+        //private Model model;
 
         public Car()
         {
@@ -33,6 +33,8 @@
         public int UserId { get; set; }
 
         public User User { get; set; }
+
+        public bool isDeleted { get; set; }
 
         public virtual ICollection<RepairWork> RepairWorks
         {

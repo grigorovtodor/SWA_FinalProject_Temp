@@ -24,6 +24,8 @@
 
         public int ModelId { get; set; }
 
+        public bool isDeleted { get; set; }
+
         public virtual ICollection<Model> Models
         {
             get { return this.models; }

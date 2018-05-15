@@ -35,6 +35,8 @@
 
         public string Email { get; set; }
 
+        public bool isDeleted { get; set; }
+
         public virtual ICollection<Car> Cars { get; set; }
 
     }

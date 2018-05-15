@@ -22,7 +22,7 @@
         [MaxLength(60)]
         public string Name { get; set; }
 
-        public long IdNumber { get; set; }
+        public long IdCardNumber { get; set; }
 
         [MaxLength(10)]
         public string UniqueIdNumber { get; set; }

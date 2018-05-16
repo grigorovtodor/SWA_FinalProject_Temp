@@ -10,10 +10,12 @@
 
     public class Brand
     {
+        private string name;
         private ICollection<Model> models;
 
-        public Brand()
+        public Brand(string name)
         {
+            this.Name = name;
             this.models = new HashSet<Model>();
         }
 

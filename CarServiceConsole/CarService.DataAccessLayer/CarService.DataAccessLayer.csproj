@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -45,12 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\CarService.BusinessObjects\CarService.BusinessObjects.csproj">
+      <Project>{136cae1b-a96c-4e0e-963e-c7a30165b2b1}</Project>
+      <Name>CarService.BusinessObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CarService.Models\CarService.Models.csproj">
       <Project>{326b30a0-00d1-4b88-84bb-d8b392dac325}</Project>
       <Name>CarService.Models</Name>

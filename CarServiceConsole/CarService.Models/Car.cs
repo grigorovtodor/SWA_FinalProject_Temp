@@ -1,5 +1,6 @@
 ﻿namespace CarService.Models
 {
+    using Enums;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -12,8 +13,14 @@
         private ICollection<RepairWork> repairWorks;
         //private Model model;
 
-        public Car()
+        public Car(User user, Brand brand, Model model, string vin, string registrationPlateNumber, Color color)
         {
+            this.User = user;
+            this.Brand = brand;
+            this.Model = model;
+            this.VIN = vin;
+            this.RegistrationPlateNumber = registrationPlateNumber;
+            this.Color = color;
             this.repairWorks = new List<RepairWork>();
         }
 
@@ -31,7 +38,7 @@
 
         public Brand Brand { get; set; }
 
-        public Model Model { get; set; } //this.model = new List<Model>().Select(m => m.BrandId = Brand.Id).ToList();
+        public Model Model { get; set; } 
 
         public int UserId { get; set; }
 

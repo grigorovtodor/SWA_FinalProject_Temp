@@ -6,10 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
     using CarService.Data;
-    using CarService.Models;
     using System.Data.Entity;
     using Data.Migrations;
-    using AutoMapper;
 
     public class Startup
     {
@@ -18,11 +16,11 @@
             var db = new CarServiceDbContext();
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarServiceDbContext, Configuration>());
             
-            Mapper.Initialize(cfg => cfg.CreateMap<>)
+            
 
-            var user = new User { Name = "Ivan", Address = "Sofiq", Gender = Gender.Male  };
+            //var user = new User { Name = "Ivan", Address = "Sofiq", Gender = Gender.Male  };
 
-            db.Users.Add(user);
+            //db.Users.Add(user);
 
 
 

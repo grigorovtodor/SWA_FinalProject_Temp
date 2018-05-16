@@ -1,4 +1,4 @@
-﻿namespace CarService.Models
+﻿namespace CarService.Models.Enums
 {
     using System;
 

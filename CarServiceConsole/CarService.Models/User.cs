@@ -1,5 +1,6 @@
 ﻿namespace CarService.Models
 {
+    using Enums;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -9,10 +10,30 @@
 
     public class User
     {
+        //private string name;
+        //private long idCardNumber;
+        //private string uniqueIdNumber;
+        //private string phoneNumber;
+        //private Gender gender;
+        //private string email;
+        //private string address;
+
         private ICollection<Car> cars;
 
-        public User()
+        public User(string name, long idCardNumber, string uniqueIdNumber, string phoneNumber, Gender gender) : this(name, idCardNumber, uniqueIdNumber, phoneNumber, null, null, gender)
         {
+
+        }
+
+        public User(string name, long idCardNumber, string uniqueIdNumber, string phoneNumber, string email, string address, Gender gender)
+        {
+            this.Name = name;
+            this.IdCardNumber = idCardNumber;
+            this.UniqueIdNumber = uniqueIdNumber;
+            this.PhoneNumber = phoneNumber;
+            this.Email = email;
+            this.Address = address;
+            this.Gender = gender;
             this.cars = new HashSet<Car>();
         }
 

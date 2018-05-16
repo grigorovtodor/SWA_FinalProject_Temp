@@ -8,6 +8,14 @@
 
     public class Model
     {
+        private Brand brand;
+
+        public Model(string name, Brand brand)
+        {
+            this.Name = name;
+            this.Brand = brand;
+        }
+
         [Key]
         public int Id { get; set; }
 

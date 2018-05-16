@@ -9,6 +9,14 @@
 
     public class RepairWork
     {
+        public RepairWork(DateTime repairDate, string description, decimal price, Car car)
+        {
+            this.RepairDate = repairDate;
+            this.Description = description;
+            this.Price = price;
+            this.Car = car;
+        }
+
         [Key]
         public int Id { get; set; }
 

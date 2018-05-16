@@ -21,7 +21,7 @@
 
         }
 
-        public UserBusiness(string name, long idCardNumber, string uniqueIdNumber,  string phoneNumber, string email, string address, GenderBusiness gender = 0)
+        public UserBusiness(string name, long idCardNumber, string uniqueIdNumber,  string phoneNumber, string email, string address, GenderBusiness gender)
         {
             this.Name = name;
             this.IdCardNumber = idCardNumber;
@@ -43,7 +43,11 @@
 
         public string Address { get; set; }
 
-        public GenderBusiness Gender { get; set; }
+        public GenderBusiness Gender
+        {
+            get { return this.gender; }
+            set { this.gender = value; }
+        }
 
         public string PhoneNumber { get; set; }
 

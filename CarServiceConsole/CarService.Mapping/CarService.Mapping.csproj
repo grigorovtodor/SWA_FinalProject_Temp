@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FC6CE4A-7392-45AF-8E7B-A500C039B8CC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{9C2EC17E-59DC-406B-8B51-128A013F19AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CarService.ConsoleClient</RootNamespace>
-    <AssemblyName>CarService.ConsoleClient</AssemblyName>
+    <RootNamespace>CarService.Mapping</RootNamespace>
+    <AssemblyName>CarService.Mapping</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,16 +34,7 @@
       <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
@@ -56,30 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Startup.cs" />
+    <Compile Include="MappingProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarService.BusinessObjects\CarService.BusinessObjects.csproj">
       <Project>{136cae1b-a96c-4e0e-963e-c7a30165b2b1}</Project>
       <Name>CarService.BusinessObjects</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CarService.Data\CarService.Data.csproj">
-      <Project>{97d3e4ac-fc7e-4bfa-8877-0bce04f376b7}</Project>
-      <Name>CarService.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CarService.Mapping\CarService.Mapping.csproj">
-      <Project>{9c2ec17e-59dc-406b-8b51-128a013f19ae}</Project>
-      <Name>CarService.Mapping</Name>
+    <ProjectReference Include="..\CarService.DataAccessLayer\CarService.DataAccessLayer.csproj">
+      <Project>{1f306333-4b70-48f4-a34c-6ac3bd85f59a}</Project>
+      <Name>CarService.DataAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\CarService.Models\CarService.Models.csproj">
       <Project>{326b30a0-00d1-4b88-84bb-d8b392dac325}</Project>
       <Name>CarService.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

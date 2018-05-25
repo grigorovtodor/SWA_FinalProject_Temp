@@ -4,8 +4,6 @@
     using Models;
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     public static class Mapping
     {
@@ -94,6 +92,11 @@
             return dataObject;
         }
 
+        /// <summary>
+        /// RepairWork mapping methods
+        /// </summary>
+        /// <param name="repairWork"></param>
+        /// <returns></returns>
         public static RepairWorkBusiness ConvertToBusinessEntity(RepairWork repairWork)
         {
             var businessObject = new RepairWorkBusiness(repairWork.RepairDate, repairWork.Description, repairWork.Price, ConvertToBusinessEntity(repairWork.Car));
